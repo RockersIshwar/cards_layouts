@@ -1,0 +1,34 @@
+.cardDetailsBorder {
+  width: 100%;
+  border-radius: 20px !important;
+  background-color: #f3f3f3 !important;
+  .cardDetailsHeading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    .cardDetailsHeadingIcon {
+      color: #6c36fa;
+      padding: 15px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+  }
+  .cardDetailsContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px;
+    .cardStructureText {
+      color: gray;
+      width: 155px;
+      margin: 3px;
+    }
+    .login-link {
+      transition: ease-in-out 1s;
+      &:hover {
+        color: rgb(253, 253, 253);
+        background-color: rgb(134, 133, 133);
+      }
+    }
+  }
+}

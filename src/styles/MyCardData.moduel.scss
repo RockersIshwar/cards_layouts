@@ -1,0 +1,131 @@
+@import './mixin.scss';
+
+.myCardSection {
+  background: #6d3cfa;
+  padding: 30px 120px;
+  .myCardContainer {
+    .raisePrice {
+      margin: 0;
+      font-size: 40px;
+      font-weight: 900;
+      color: hsl(253.49deg 58.9% 57.06%);
+      @include max-mobile-landscape {
+        font-size: 30px;
+      }
+    }
+    .headerWraper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .iconContent {
+        .heartIcon {
+          color: #ed4b1a;
+          transition: ease-in-out 0.7s;
+          &:hover {
+            transform: rotateZ(360deg);
+          }
+        }
+        @include medium-small-width {
+          display: none;
+        }
+      }
+
+      .shareIcon {
+        color: #fcfdff;
+        transition: ease-in-out 0.7s;
+        &:hover {
+          transform: scale(1.5, 1.5);
+        }
+      }
+    }
+    .myCardBorder {
+      width: 100%;
+      align-self: stretch;
+      border-radius: 20px;
+      padding: 0px 15px;
+    }
+    .progressBar {
+      background-color: rgb(111, 81, 216);
+      width: 60%;
+      padding: 2px;
+    }
+    .remainingContent {
+      color: rgb(111, 81, 216);
+      .remainingText {
+        font-size: 19px;
+      }
+
+      @include max-mobile-landscape {
+        display: none;
+      }
+    }
+
+    .cardInvestors {
+      @include max-mobile-landscape {
+        display: none;
+      }
+    }
+    .investNowButton {
+      font-size: 23px;
+      font-weight: 900;
+      border: none;
+      border-radius: 10px;
+      background-color: rgb(111, 81, 216);
+      transition: ease-out 0.5s;
+      &:hover {
+        background-color: #f4f3f7;
+        color: rgb(111, 81, 216);
+        border: 2px solid rgb(111, 81, 216);
+      }
+    }
+    .scheduleCard {
+      width: 100%;
+      align-self: stretch;
+      background-color: transparent;
+      color: #fff;
+      border-radius: 20px;
+      .scheduleTitle {
+        display: flex;
+        align-items: center;
+        .scheduleCardIcon {
+          background: lightgray;
+          border-radius: 50%;
+          padding: 15px;
+          color: #3e7be5;
+          display: inline;
+        }
+      }
+      .scheduleButton {
+        font-size: 18px;
+        color: rgb(91, 91, 223);
+        align-self: center;
+        padding: 8px 0px;
+        transition: ease-in-out 0.8s;
+        border-radius: 10px;
+
+        &:hover {
+          background-color: #4380a2;
+          color: #fff;
+        }
+      }
+    }
+    .raiseCardLink {
+      color: #fff;
+    }
+  }
+  .cardAccept {
+    padding: 0px 30px;
+  }
+}
+
+.myCardContent {
+  justify-content: space-between;
+}
+.cardHeading {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1;
+  @include max-mobile-landscape {
+    font-size: 30px;
+  }
+}

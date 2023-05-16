@@ -1,0 +1,47 @@
+$mds-mobile-width: 481px;
+$max-mobile-landscape: 916px;
+$max-min-mobile-landscape: 916px;
+$lg-mobile-width: 768px;
+$ipad-medium-width: 992px;
+
+@mixin medium-small-width {
+  @media (max-width: #{$mds-mobile-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin max-mobile-landscape {
+  @media (max-width: #{$max-mobile-landscape - 1px}) {
+    @content;
+  }
+}
+
+@mixin min-width-landscape915 {
+  @media (min-width: #{$max-min-mobile-landscape - 1px}) {
+    @content;
+  }
+}
+
+@mixin lg-mobile-width767 {
+  @media (min-width: #{$lg-mobile-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin lg-mobile-width-max767 {
+  @media (max-width: #{$lg-mobile-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin ipad-medium-width991 {
+  @media (min-width: #{$ipad-medium-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin min-mds-mobile-width {
+  @media (min-width: #{$mds-mobile-width - 1px}) {
+    @content;
+  }
+}
